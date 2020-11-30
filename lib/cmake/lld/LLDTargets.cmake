@@ -114,7 +114,7 @@ set_target_properties(lldELF PROPERTIES
 add_library(lldMachO2 STATIC IMPORTED)
 
 set_target_properties(lldMachO2 PROPERTIES
-  INTERFACE_LINK_LIBRARIES "lldCommon;-lpthread;LLVMARMCodeGen;LLVMARMAsmParser;LLVMARMDesc;LLVMARMDisassembler;LLVMARMInfo;LLVMARMUtils;LLVMAArch64CodeGen;LLVMAArch64AsmParser;LLVMAArch64Desc;LLVMAArch64Disassembler;LLVMAArch64Info;LLVMAArch64Utils;LLVMBinaryFormat;LLVMCore;LLVMObject;LLVMOption;LLVMSupport;LLVMTextAPI"
+  INTERFACE_LINK_LIBRARIES "lldCommon;-lpthread;LLVMARMCodeGen;LLVMARMAsmParser;LLVMARMDesc;LLVMARMDisassembler;LLVMARMInfo;LLVMARMUtils;LLVMAArch64CodeGen;LLVMAArch64AsmParser;LLVMAArch64Desc;LLVMAArch64Disassembler;LLVMAArch64Info;LLVMAArch64Utils;LLVMBinaryFormat;LLVMCore;LLVMLTO;LLVMMC;LLVMObject;LLVMOption;LLVMPasses;LLVMSupport;LLVMTextAPI"
 )
 
 # Create imported target lldMinGW
